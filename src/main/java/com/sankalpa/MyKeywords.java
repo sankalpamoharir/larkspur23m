@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import com.sankalpa.mycustomerrors.MyErrors;
 
 public class MyKeywords {
-	public RemoteWebDriver driver;
+	public static RemoteWebDriver driver;
 	public FluentWait<WebDriver> wait;
 
 	public void launchingBrowser(String name) {

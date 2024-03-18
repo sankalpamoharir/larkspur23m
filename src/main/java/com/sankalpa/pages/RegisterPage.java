@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sankalpa.base.TestBase;
+import com.sankalpa.MyKeywords;
 
 public class RegisterPage {
 	@FindBy(xpath = "//a[contains(text(),'Register')]")
@@ -36,7 +36,7 @@ public class RegisterPage {
 	@FindBy(xpath = "//span[@id=\"customer.lastName.errors\"]")
 	public WebElement lastNameErr;
 	public RegisterPage() {
-		PageFactory.initElements(TestBase.keys.driver,this);
+		PageFactory.initElements(MyKeywords.driver,this);
 	}
 
 	public void clickOnRegisterlink() {
